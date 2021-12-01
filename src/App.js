@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 import './App.css';
 import FormularioCadastro from './components/FormularioCadastro/FormularioCadastro';
 
+import { Container, Typography } from '@material-ui/core';
+
 class App extends Component {
   render() { 
     return (
-      <>
-      <h1>Formulário</h1>
-      <FormularioCadastro />
-      </>
+      <Container component="article" maxWidth="sm">
+        <Typography align="center" variant="h3" component="h1">Formulário de Cadastro</Typography>
+        <FormularioCadastro />
+      </Container>
     );
   }
 }
